@@ -1,0 +1,80 @@
+/* RESET CSS */
+body{
+    margin: 0;
+}
+
+/* STYLES */
+body{
+    background-color: #303030;
+}
+
+#preloader{
+    width: 9vh;
+    height: 9vh;
+    border: 0.1vh solid #fff;
+    border-radius: 100%;
+    margin: 46.5vh auto;
+    font-size: 3vh;
+    color: #fff;
+    line-height: 9vh;
+    text-align: center;
+    letter-spacing: 4px;
+    animation: rot 1s 5, hide 0.7s 1;
+    animation-delay: 0s, 4.4s;
+    animation-direction: alternate-reverse, normal;
+    animation-fill-mode: forwards;
+}
+
+.inner{
+    padding-left: 0.5vh;
+}
+
+#preloader span:first-child{
+    color: #4ecdc4;
+    animation: wave-blue 1s infinite;
+    animation-direction: alternate-reverse;
+}
+#preloader span:nth-child(2){
+    color: #c0fdfb;
+    animation-delay: 0.5s;
+}
+
+#preloader span:last-child{
+    color: #E7D8C9;
+    animation: wave-pink 1s infinite;
+    animation-direction: alternate-reverse;
+    /* animation-delay: 1s; */
+}
+
+/* CSS ANIMATIONS */
+@keyframes rot {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(275deg);
+    }
+}
+
+@keyframes wave-blue{
+    from{
+        color: #2673cc;
+    }
+    to{
+        color: #51e0d7;
+    }
+}
+
+@keyframes wave-pink{
+    from{
+        color: rgb(253, 114, 160);
+    }
+    to{
+        color: rgb(255, 198, 210);
+    }
+}
+
+@keyframes hide{
+    from{ opacity: 1;}
+    to{ opacity: 0;}
+}
