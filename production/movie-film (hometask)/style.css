@@ -1,0 +1,79 @@
+body{
+    background-image: url(background.png);
+    margin: 0;
+}
+
+.overlay{
+    position: absolute;
+    z-index: 2;
+    background-image: radial-gradient(circle, transparent 50%, rgb(4, 13, 26));
+    width: 100vw;
+    height: calc(100vh - 18px);
+    pointer-events: none;
+}
+
+#box{
+    background-color: rgb(15, 36, 64);
+    width: 40vh;
+    height: 40vh;
+    border-radius: 20vh;
+    position: absolute;
+    top: 30vh;
+    left: 33vw;
+    transform: translateX(-20vh);
+    box-shadow: 0 0 8px 5px rgb(10, 26, 48);
+}
+
+#play-btn{
+    width: 30vh;
+    height: 30vh;
+    /* background: rgba(3, 88, 140, 0.8); */
+    background-image: linear-gradient(-45deg, rgba(122, 7, 133, 0.6), rgba(33, 94, 175, 0.6));
+    border-radius: 15vh;
+    position: absolute;
+    top: 5vh;
+    left: 5vh;
+    z-index: 1;
+    text-align: center;
+    line-height: 30vh;
+    font-size: calc(30vh/4);
+    box-shadow: 3px 4px 5px 3px rgb(8, 19, 34);
+}
+
+#film{
+    height: 28vh;
+    width: calc(288vh + 9vw);
+    position: absolute;
+    top: calc(100% - 34vh);
+    left: calc(20vh - 33vw);
+    animation: sliding 200s infinite;
+    filter: drop-shadow(0 8px 16px rgb(8, 23, 44));
+}
+
+#film img{
+    height: 24vh;
+    float: left;
+    margin-top: 2vh;
+    border-right: 1vw solid rgba(10, 22, 38, 0.8);
+
+}
+
+#film .holes{
+    height: 2vh;
+    position: absolute;
+    width: inherit;
+    background-image: radial-gradient(transparent 49%, rgba(10, 22, 38, 0.8) 50%);
+    background-size: 11px 15px;
+}
+
+#film .holes:last-child{
+    bottom: 0;
+}
+
+#play-btn i{
+    color: white;
+}
+
+#play-btn:hover+#film{
+    animation-duration: 10s;
+}
