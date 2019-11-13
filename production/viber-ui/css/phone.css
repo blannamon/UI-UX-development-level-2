@@ -1,0 +1,40 @@
+html{
+    font-family: 'Roboto', sans-serif;
+    background-color: #333;
+    /* padding-top: 50px; */
+}
+
+.mockup_phone{
+    height: 1068px;
+    width: 490px;
+    padding: 6px 3px;
+    background-image: linear-gradient(#33383a, #0e0e0a 7%, #0e0e0a 93%, #33383a);
+    box-shadow: 0 0 40px 12px #111;
+    border-radius: 40px;
+}
+
+.mockup_glass{
+    width: 480px;
+    height: 988px;
+    background-color: #111;
+    padding: 40px 5px;  
+    background-image: linear-gradient(90deg, #747572, #090a0a 3%, #090a0a 97%, #747572);
+    border-radius: 40px;
+}
+
+.mockup_screen{
+    width: 480px;
+    height: 988px;
+    background-color: #888;
+    border-radius: 30px;
+    /* overflow: hidden; */
+}
+
+.center-hv{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
