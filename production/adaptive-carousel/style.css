@@ -1,0 +1,145 @@
+/* GENERAL STYLES */
+
+body{
+     background: linear-gradient(0deg, rgb(142, 175, 214), transparent);
+}
+
+.center{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/* CAROUSEL STYLES */
+
+#carousel{
+    width: 960px;
+    height: 480px;
+    background-color: inherit;
+}
+
+#carousel a{
+    transition: transform 0.3s;
+}
+
+#carousel a:hover{
+    transform: scale(1.15);
+}
+
+
+/* CAROUSEL IMAGES STYLES */
+
+#carousel img{
+    position: absolute;
+    border: 8px solid white;
+    border-bottom: 64px solid white;
+    box-shadow: 0 2px 5px 0px rgb(201, 201, 201);
+}
+
+#carousel picture:first-child  img{
+    left: -300px;
+    transform: scale(0.8);
+    opacity: 0.8;
+}
+
+#carousel picture:nth-child(2) img{
+    z-index: 1;
+}
+    
+#carousel picture:last-child img{
+    right: -300px;
+    transform: scale(0.8);
+    opacity: 0.8;
+}
+
+
+/* CAROUSEL CONTROLS STYLES */
+
+#carousel .controls a{
+    background-color: #fff;
+    border-radius: 100%;
+    text-decoration: none;
+    color: rgb(174, 199, 236);
+    opacity: 1;
+    padding: 0;
+}
+
+#carousel .controls a i{
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 2px 5px 0px rgb(201, 201, 201);
+    border-radius: 100%;
+}
+
+#carousel .controls{
+    position: absolute;
+    top: 213px;
+    font-size: 50px;
+    width: inherit;
+}
+
+
+/* CAROUSEL INDICATORS STYLES */
+
+#carousel .indicators{
+    position: absolute;
+    top: 510px;
+    font-size: 17px;
+    width: inherit;
+    text-align: center;
+    z-index: 2;
+}
+
+#carousel .indicators a{
+    text-decoration: none;
+    color: rgb(174, 199, 236);
+    padding: 0 2px;
+}
+
+#carousel .controls a:first-child{
+    position: absolute;
+    left: 6px;
+}
+
+#carousel .controls a:last-child{
+    position: absolute;
+    left: 900px;
+}
+
+
+/* CAROUSEL ADAPTIVE STYLES */
+
+@media screen and (max-width: 1000px){
+    #carousel{
+        width: 100vw;
+        top: 40px;
+    }
+
+    #carousel picture:first-child  img{
+        left: 0;
+        top: -270px;
+        border-bottom: 8px solid white;
+    }
+
+    #carousel picture:nth-child(2) img{
+
+    }
+        
+    #carousel picture:last-child img{
+        right: 0;
+        top: 270px;
+        border-bottom: 8px solid white;
+    }
+
+    #carousel .controls{
+        display: none;
+    }
+
+    #carousel .indicators{
+        top: 620px;
+    }
+}
