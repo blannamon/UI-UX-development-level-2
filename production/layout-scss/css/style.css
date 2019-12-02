@@ -1,0 +1,146 @@
+body {
+  font-family: Roboto;
+}
+
+.section {
+  height: 100vh;
+}
+
+.section h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 3em;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+.section h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.section h4 {
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: 2.3em;
+}
+
+.section p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.section .important-text {
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 1.6em;
+  margin-bottom: 2em;
+}
+
+.row.row-ib div {
+  display: inline-block;
+  background-color: #fff;
+  width: 32%;
+  margin-right: 2%;
+  border: 1px solid #f0f0f0;
+  border-radius: 8%;
+  -webkit-box-shadow: 0 0 30px #f0f0f0;
+          box-shadow: 0 0 30px #f0f0f0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row.row-ib div:last-child {
+  margin-right: 0;
+}
+
+.container {
+  width: 1140px;
+  margin: auto;
+}
+
+#header-main {
+  background-color: #999;
+}
+
+#section-advantages {
+  text-align: center;
+}
+
+#section-advantages .advantage-block {
+  padding: 1.8em 0;
+}
+
+#section-advantages .advantage-block .shape {
+  display: inline-block;
+  font-size: 1.5em;
+  padding: 2em;
+  background-image: url(../images/promo-icon-bg.svg);
+  color: white;
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: 45% 20%;
+}
+
+#section-manage {
+  background: #666;
+}
+
+#section-manage h1, #section-manage h2 {
+  text-align: left;
+}
+
+#section-manage .col {
+  float: left;
+}
+
+#section-manage .col.col-fl-1 {
+  width: 66.66667%;
+  padding-top: 50px;
+}
+
+#section-manage .col.col-fl-2 {
+  height: 200px;
+  width: 33.33333%;
+  background-color: #00b300;
+}
+
+#section-manage .col .manage-blocks .manage-block {
+  padding: 20px 0;
+}
+
+#section-manage .col .manage-blocks .manage-block p, #section-manage .col .manage-blocks .manage-block .icon-wrap {
+  display: inline-block;
+}
+
+#section-manage .col .manage-blocks .manage-block .icon-wrap {
+  background-color: white;
+  border-radius: 10%;
+  padding: 1em;
+  margin-right: 10px;
+}
+
+#section-manage .col .manage-blocks .manage-block .icon-wrap i.fas, #section-manage .col .manage-blocks .manage-block .icon-wrap i.far {
+  font-size: 2em;
+}
+
+#section-manage .col .manage-blocks .manage-block.manage-block-1 {
+  background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 800px;
+  }
+  .container .row div {
+    display: block;
+    width: 55%;
+    margin: 30px auto;
+  }
+  .container .row div:last-child {
+    margin-right: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
