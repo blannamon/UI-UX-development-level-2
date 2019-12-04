@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Screenshots - SCSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha256-qvCL5q5O0hEpOm1CgOLQUuHzMusAZqDcAZL9ijqfOdI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha256-nXBV7Gr2lU0t+AwKsnS05DYtzZ81oYTXS6kj7LBQHfM=" crossorigin="anonymous" />
+    <!--  -->
+
+    <link rel="stylesheet" href="css/screenshots.css">
+</head>
+<body>
+    <section id="screenshots" class="section">
+        <div class="container">
+            <h1>App screenshots</h1>
+            <h2>Looks awesome</h2>
+            <p class="important-text">Credibly synthesize multimedia based networks vis-a-vis top-line growth strategies.<br>Continually leverage existing
+            worldwide interfaces</p>
+
+            <div class="carousel">
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="images/01.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="images/02.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="images/03.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="images/04.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="images/05.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="images/06.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="overlay-phone"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Owl Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            center: true,
+            loop: true,
+            margin: 30,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+</body>
+</html>

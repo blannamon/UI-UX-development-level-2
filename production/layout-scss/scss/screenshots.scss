@@ -1,0 +1,120 @@
+// HOMETASK:
+// сверстать блок Team
+// добавить animate on scroll
+// responsive
+
+// body{
+//     font-family: Roboto;
+// }
+
+// .container{
+//     width: 1140px;
+//     margin: auto;
+// }
+
+// .section{
+//     height: 100vh;
+
+
+//     h1{
+//         text-align: center;
+//         font-weight: 900;
+//         font-size: 3em;
+//         margin-top: 1em;
+//         margin-bottom: 0.3em;
+//     }
+//     h2{
+//         text-align: center;
+//         font-weight: 300;
+//         font-size: 2em;
+//         margin-bottom: 1em;
+//     }
+//     h4{
+//         font-size: 1.3em;
+//         font-weight: 500;
+//         line-height: 2.3em;
+//     }
+//     p{
+//         font-size: 1em;
+//         line-height: 1.5em;
+//         color: lighten(black, 70%);
+//     }
+
+//     .important-text{
+//         font-size: 1.2em;
+//         text-align: center;
+//         line-height: 1.6em;
+//         margin-bottom: 2em;
+//     }
+// }
+
+
+// Variables
+$purple: #9629e6;
+
+// STYLES
+#screenshots{
+    padding-top: 50px;
+    padding-bottom: 200px;
+    background-color: lighten(rgb(171, 192, 199), 25%);
+    .container{
+        overflow: hidden;
+        padding-bottom: 125px;
+    }
+
+    .carousel{
+        position: relative;
+        margin-top: 125px;
+        
+
+        .owl-stage-outer{
+            overflow: visible!important;
+
+            .owl-item{
+                img{
+                    border-radius: 20px;
+                    transform: scale(1.0);
+                    transition: 0.3s;
+                }
+                &.center{
+                    img{
+                        transform: scale(1.3);
+                    }
+                }
+            }
+        }
+
+        .owl-dots{
+            position: relative;
+            top: 85px;
+
+            .owl-dot{
+                outline: none;
+
+                &.active{
+                    span{
+                        background-color: $purple;
+                    }
+                }
+            }
+        }
+
+        .overlay-phone{
+            position: absolute;
+            width: 274px;
+            height: 529px;
+            // background-color: green; 
+            background-image: url(../images/phone-frame2.png);
+            background-repeat: no-repeat;
+            background-size: 100% 507px;
+            background-position: center top;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            z-index: 1000;
+        }
+    }
+}
+
