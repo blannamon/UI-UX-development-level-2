@@ -96,7 +96,7 @@ body {
   display: inline-block;
   font-size: 1.5em;
   padding: 2em;
-  background-image: url(/layout-scss/images/promo-icon-bg.svg);
+  background-image: url("/layout-scss/images/promo-icon-bg.svg");
   color: white;
   background-size: 150px;
   background-repeat: no-repeat;
