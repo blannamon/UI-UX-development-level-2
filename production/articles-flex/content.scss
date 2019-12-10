@@ -1,0 +1,49 @@
+// <picture>+media-query
+// 400x400 --> big screen
+// 700x400 --> small screen
+
+
+
+#news{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width:860px){
+        flex-direction: column;
+        width: 90%;
+        // justify-content: center;
+    }
+
+    article{
+        width: 30%;
+        @media screen and (max-width:860px){
+            width: 100%;  
+            margin-bottom: 30px; 
+        }
+
+        .wide-image{
+            display: none;
+            @media screen and (max-width:860px){
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .square-image{
+            width: 100%;
+            @media screen and (max-width:860px){
+                display: none;
+            }
+        }
+
+        &:nth-child(2){
+            border: 5px solid #333;
+            padding: 0 15px;
+            @media screen and (max-width:860px){
+                order: -1;
+                align-self: center;
+            }
+        }
+    }
+}
