@@ -5,6 +5,7 @@
     <title>Layout - SCSS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap">
     
     <!-- Owl Carousel -->
@@ -18,18 +19,23 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- / AOS Styles -->
 
-    
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header id="header-main" class="section">
+        <img src="https://appco.themetags.com/img/hero-bg-shape-1.svg" alt="" class="big-shape">
         <div class="container">
             <div class="left-block">
                 <h1><span>Brainstorming</span> for<br>desired perfect Usability</h1>
                 <p class="important-text">Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!</p>
-                <label for="hero-input"><button class="bg-button">Subscribe</button><input type="email" placeholder="info@yourdomain.com" id="hero-input"></label>
+                <div class="hero-input-wrapper">
+                    <label for="hero-input" class="input-container"><button class="bg-button">Subscribe</button><input type="email" placeholder="info@yourdomain.com" id="hero-input"></label>
+                </div>
+                <div class="video-overview">
+                    <button class="arrow-button"><i class="material-icons-outlined">play_arrow</i></button>
+                    <span class="video-overview-text">Watch video overview</span>
+                </div>
             </div>
             <div class="right-block">
                 <div class="hero-phone"></div>
@@ -63,6 +69,7 @@
     </section>
     
     <section id="section-manage" class="section">
+        <img src="https://appco.themetags.com/img/about-bg-shape.svg" alt="" class="manage-bg-pic">
         <div class="container">
             <div class="col col-fl-1">
                 <h1>Use your android or ios device</h1>

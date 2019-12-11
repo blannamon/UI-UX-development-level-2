@@ -8,6 +8,12 @@ body {
   padding-bottom: 40px;
 }
 
+@media screen and (max-width: 1200px) {
+  .section {
+    height: 1200px;
+  }
+}
+
 .section h1 {
   text-align: center;
   font-weight: 500;
@@ -63,7 +69,7 @@ body {
   width: 32%;
   margin-right: 2%;
   border: 1px solid #f0f0f0;
-  border-radius: 8%;
+  border-radius: 25px;
   -webkit-box-shadow: 0 0 30px #f0f0f0;
           box-shadow: 0 0 30px #f0f0f0;
   -webkit-box-sizing: border-box;
@@ -77,6 +83,18 @@ body {
 .container {
   width: 1140px;
   margin: auto;
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    width: 1100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
 }
 
 button.bg-button {
@@ -111,6 +129,14 @@ button.bg-button:hover {
   z-index: 1;
 }
 
+@media screen and (max-width: 1400px) {
+  #header-main {
+    height: 700px;
+    padding-top: 100px;
+    background-size: auto 100%;
+  }
+}
+
 #header-main::after {
   content: '';
   background: linear-gradient(30deg, #09000c, #d13fff);
@@ -123,18 +149,58 @@ button.bg-button:hover {
   z-index: -1;
 }
 
+#header-main .big-shape {
+  position: absolute;
+  bottom: -1px;
+}
+
 #header-main .left-block {
   float: left;
   width: 60%;
   padding-top: 50px;
 }
 
-#header-main .left-block label {
+@media screen and (max-width: 1100px) {
+  #header-main .left-block {
+    width: 100%;
+  }
+}
+
+#header-main .left-block h1, #header-main .left-block p {
+  text-align: left;
+  color: white;
+}
+
+@media screen and (max-width: 1100px) {
+  #header-main .left-block h1, #header-main .left-block p {
+    text-align: center;
+  }
+}
+
+#header-main .left-block h1 span, #header-main .left-block p span {
+  font-weight: 900;
+}
+
+@media screen and (max-width: 1100px) {
+  #header-main .left-block .hero-input-wrapper {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+#header-main .left-block .input-container {
   position: relative;
   height: 46px;
 }
 
-#header-main .left-block label input {
+@media screen and (max-width: 1100px) {
+  #header-main .left-block .input-container {
+    margin: auto;
+  }
+}
+
+#header-main .left-block .input-container #hero-input {
   height: 46px;
   width: 70%;
   border: none;
@@ -143,33 +209,120 @@ button.bg-button:hover {
   outline: none;
 }
 
-#header-main .left-block label button.bg-button {
+@media screen and (max-width: 1100px) {
+  #header-main .left-block .input-container #hero-input {
+    width: 100%;
+  }
+}
+
+#header-main .left-block .input-container button.bg-button {
   position: absolute;
   right: 5px;
   margin-top: 5px;
 }
 
-#header-main .left-block h1, #header-main .left-block p {
-  text-align: left;
+#header-main .left-block .video-overview {
+  margin-top: 20px;
+  line-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1100px) {
+  #header-main .left-block .video-overview {
+    width: 230px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+#header-main .left-block .video-overview .arrow-button {
+  outline: none;
+  display: inline-block;
+  background: white;
+  border: 2px solid white;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 0 0 0 0px #f0f0f0;
+          box-shadow: 0 0 0 0px #f0f0f0;
+}
+
+#header-main .left-block .video-overview .arrow-button:hover {
+  -webkit-animation: behindCircles 1s infinite;
+          animation: behindCircles 1s infinite;
+  background-color: #9629e6;
+}
+
+@-webkit-keyframes behindCircles {
+  from {
+    -webkit-box-shadow: 0 0 0 0px #f0f0f034;
+            box-shadow: 0 0 0 0px #f0f0f034;
+  }
+  to {
+    -webkit-box-shadow: 0 0 0 15px #f0f0f096;
+            box-shadow: 0 0 0 15px #f0f0f096;
+  }
+}
+
+@keyframes behindCircles {
+  from {
+    -webkit-box-shadow: 0 0 0 0px #f0f0f034;
+            box-shadow: 0 0 0 0px #f0f0f034;
+  }
+  to {
+    -webkit-box-shadow: 0 0 0 15px #f0f0f096;
+            box-shadow: 0 0 0 15px #f0f0f096;
+  }
+}
+
+#header-main .left-block .video-overview .arrow-button:hover .material-icons-outlined {
   color: white;
 }
 
-#header-main .left-block h1 span, #header-main .left-block p span {
-  font-weight: 900;
+#header-main .left-block .video-overview .arrow-button .material-icons-outlined {
+  line-height: 48px;
+  color: #007bff;
+  font-size: 32px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#header-main .left-block .video-overview .video-overview-text {
+  padding-left: 15px;
+  color: white;
+  font-weight: 300;
 }
 
 #header-main .right-block {
   width: 40%;
   float: right;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1100px) {
+  #header-main .right-block {
+    display: none;
+  }
 }
 
 #header-main .right-block .hero-phone {
   margin: auto;
   background-image: url(../images/app-product.png);
   background-repeat: no-repeat;
-  background-size: 90%;
+  background-size: 100%;
   background-position: 50% top;
   height: 600px;
+}
+
+@media screen and (max-width: 1200px) {
+  #header-main .right-block .hero-phone {
+    background-position: 50% 50%;
+  }
 }
 
 #section-advantages {
@@ -178,6 +331,7 @@ button.bg-button:hover {
 
 #section-advantages .advantage-block {
   padding: 1.8em 0;
+  min-width: 360px;
 }
 
 #section-advantages .advantage-block .shape {
@@ -191,8 +345,37 @@ button.bg-button:hover {
   background-position: 45% 20%;
 }
 
+#section-manage {
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  #section-manage {
+    height: 700px;
+  }
+}
+
+#section-manage .manage-bg-pic {
+  position: absolute;
+  bottom: -300px;
+  left: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1200px) {
+  #section-manage .manage-bg-pic {
+    bottom: -100px;
+  }
+}
+
 #section-manage h1, #section-manage h2 {
   text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+  #section-manage h1, #section-manage h2 {
+    text-align: center;
+  }
 }
 
 #section-manage .col {
@@ -204,6 +387,13 @@ button.bg-button:hover {
   padding-top: 50px;
 }
 
+@media screen and (max-width: 1200px) {
+  #section-manage .col.col-fl-1 {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+
 #section-manage .col.col-fl-2 {
   height: 630px;
   width: 33.33333%;
@@ -213,8 +403,28 @@ button.bg-button:hover {
   background-size: 100% 100%;
 }
 
+@media screen and (max-width: 1200px) {
+  #section-manage .col.col-fl-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #section-manage .col .manage-blocks {
+    width: 90%;
+    margin: auto;
+  }
+}
+
 #section-manage .col .manage-blocks .manage-block {
   padding: 20px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  #section-manage .col .manage-blocks .manage-block {
+    text-align: center;
+    margin: 30px 0;
+  }
 }
 
 #section-manage .col .manage-blocks .manage-block p, #section-manage .col .manage-blocks .manage-block .icon-wrap {
@@ -229,6 +439,12 @@ button.bg-button:hover {
   border-radius: 10%;
   padding: 1em;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  #section-manage .col .manage-blocks .manage-block .icon-wrap {
+    margin: 15px 0;
+  }
 }
 
 #section-manage .col .manage-blocks .manage-block .icon-wrap i.fas, #section-manage .col .manage-blocks .manage-block .icon-wrap i.far {
@@ -393,9 +609,6 @@ button.bg-button:hover {
 }
 
 @media screen and (max-width: 1200px) {
-  .container {
-    width: 800px;
-  }
   .container .row div {
     display: block;
     width: 55%;
